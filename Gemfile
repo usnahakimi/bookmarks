@@ -7,6 +7,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gem "rubocop", require: false
 gem "sinatra"
 gem "sinatra-contrib"
+gem "pg"
 
 gem "capybara", require: false, group: :test
 gem "rspec", require: false, group: :test
