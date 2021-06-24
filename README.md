@@ -17,6 +17,10 @@ As a website user,
 So that I can access websites I use a lot, 
 I'd like to see a list of bookmarks.
 
+As a webiste user,
+So that I can store bookmarks for later,
+I'd like to add new bookmarks to Bookmark Manager.
+
 ## Domain Model:
 
 ![Bookmark Manager domain model](./usnahakimi/downloads/user_story_1.png)# bookmarks

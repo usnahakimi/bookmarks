@@ -1,12 +1,12 @@
 require 'pg'
+require './lib/bookmark'
 
 feature 'Viewing bookmarks' do 
     scenario 'user can view bookmarks' do
-      conn = PG.connect(dbname: 'bookmark_manager_test')
 
-      conn.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com');")
-      conn.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com');")
-      conn.exec("INSERT INTO bookmarks (url) VALUES('http://www.amazon.com');")
+      Bookmark.create(url: "http://www.makersacademy.com")
+      Bookmark.create(url: "http://www.destroyallsoftware.com")
+      Bookmark.create(url: "http://www.amazon.com")
 
       visit('/bookmarks')
 
